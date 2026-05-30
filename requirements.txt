@@ -1,0 +1,27 @@
+# requirements.txt
+# Python dependencies for Industrial AI PDF-to-CAD Pipeline
+# Install with: pip install -r requirements.txt
+
+# PDF processing
+pdfplumber>=0.10.0
+PyMuPDF>=1.23.0  # for fitz
+
+# OCR processing
+pytesseract>=0.3.10
+Pillow>=10.0.0
+
+# HTTP requests (for Ollama API)
+requests>=2.31.0
+
+# CAD file generation
+ezdxf>=1.2.0
+ifcopenshell>=0.7.0
+
+# LangGraph workflow orchestration
+langgraph>=0.1.0
+langchain-core>=0.2.0
+
+# Note: pytesseract also requires tesseract-ocr to be installed on your system
+# Windows: Download from https://github.com/UB-Mannheim/tesseract/wiki
+# Linux: sudo apt-get install tesseract-ocr
+# macOS: brew install tesseract
